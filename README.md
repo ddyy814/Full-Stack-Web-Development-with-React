@@ -7,4 +7,4 @@ The Hong Kong University of Science and Technology on Coursera
 
 ## First section
 Front-End Web UI Frameworks and Tools: Bootstrap 4
-
+- preprocess CSS: Command with less convert to css: "lessc styles.less styles.css"
