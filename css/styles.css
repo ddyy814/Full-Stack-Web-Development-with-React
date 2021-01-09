@@ -54,3 +54,9 @@ body{
     position: absolute;
     bottom: 0px;
 }
+.modal-header{
+    background-color: #512DA8;
+}
+.modal-body{
+    background: #D1c4E9;
+}
