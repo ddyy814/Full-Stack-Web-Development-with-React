@@ -34,7 +34,7 @@
                         <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <a id="login_btn">
                         <span class="fa fa-sign-in">
                             Login
                         </span>
@@ -94,7 +94,7 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-sm-3 align-self-center">
-                    <button type="button" class="btn btn-block nav-link btn-warning" data-toggle="modal" data-target="#table">Reserve Table</button>
+                    <button type="button" id="table_btn" class="btn btn-block nav-link btn-warning">Reserve Table</button>
                 </div>
 
                 <div id="table" class="modal fade" role="dialog">
@@ -375,5 +375,14 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
     <!-- endbuild -->
+    <script>
+        $("#login_btn").click(function() {
+            $('#loginModal').modal('show');
+        });
+        
+        $("#table_btn").click(function() {
+            $('#table').modal('show');
+        });
+    </script>
 </body>
 </html>
