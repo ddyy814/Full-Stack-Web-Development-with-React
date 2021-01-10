@@ -9,5 +9,5 @@ The Hong Kong University of Science and Technology on Coursera
 Front-End Web UI Frameworks and Tools: Bootstrap 4
 - Preprocess CSS: Command with less convert to css: "lessc styles.less styles.css"
 - Final index.html below:
-![INDEX](img/index_page.png)
-![RESERVETABLE](img/reserve_table.png)
+![INDEX](Bootstrap4/img/index_page.png)
+![RESERVETABLE](Bootstrap4/img/reserve_table.png)
