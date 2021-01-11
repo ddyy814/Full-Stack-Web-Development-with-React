@@ -11,3 +11,6 @@ Front-End Web UI Frameworks and Tools: Bootstrap 4
 - Final index.html below:
 ![INDEX](Bootstrap4/img/index_page.png)
 ![RESERVETABLE](Bootstrap4/img/reserve_table.png)
+
+## Second section
+If you get an error when you are installing reactstrap, you can use this command "npm install reactstrap --legacy-peer-deps" to install again.
