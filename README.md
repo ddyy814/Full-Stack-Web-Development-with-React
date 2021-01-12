@@ -13,4 +13,5 @@ Front-End Web UI Frameworks and Tools: Bootstrap 4
 ![RESERVETABLE](Bootstrap4/img/reserve_table.png)
 
 ## Second section
-If you get an error when you are installing reactstrap, you can use this command "npm install reactstrap --legacy-peer-deps" to install again.
+Front-End Web Development with React: React
+- If you get an error when you are installing reactstrap, you can use this command "npm install reactstrap --legacy-peer-deps" to install again.
