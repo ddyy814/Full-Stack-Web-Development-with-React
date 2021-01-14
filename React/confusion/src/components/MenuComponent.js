@@ -1,28 +1,24 @@
-import React, { Component } from 'react';
-import { Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle } from 'reactstrap';
+import { render } from '@testing-library/react';
+import React from 'react';
+import { Card, CardImg, CardImgOverlay, CardTitle } from 'reactstrap';
 
-class Menu extends Component{
-
-    constructor(props) {
-        super(props);
-        console.log("Menu Component constructor invoked");
+    function RenderMenuItem({ dish, onClick }){
+        return (
+            <Card onClick={() => onClick(dish.id)}> 
+                <CardImg width="100%" object src={dish.image} alt={dish.name} />
+                <CardImgOverlay>
+                    <CardTitle className="font-weight-bold">{dish.name}</CardTitle>
+                </CardImgOverlay>
+            </Card>
+        );
     }
 
+    const Menu = (props) => {
 
-    componentDidMount(){
-        console.log("Menu Component componentDidMount invoked");
-    }
-
-    render(){
-        const menu = this.props.dishes.map((dish) => {
+        const menu = props.dishes.map((dish) => {
             return (
                 <div className="col-12 col-md-5 m-1">
-                    <Card key={dish.id} onClick={() => this.props.onClick(dish.id)}> 
-                        <CardImg width="100%" object src={dish.image} alt={dish.name} />
-                        <CardImgOverlay>
-                            <CardTitle className="font-weight-bold">{dish.name}</CardTitle>
-                        </CardImgOverlay>
-                    </Card>
+                    <RenderMenuItem dish={dish} onClick={props.onClick} />
                 </div>
             );
         });
@@ -35,6 +31,6 @@ class Menu extends Component{
             </div>
         );
     }
-}
+        
 
 export default Menu;
