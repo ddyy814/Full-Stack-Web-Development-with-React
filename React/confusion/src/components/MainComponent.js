@@ -7,7 +7,6 @@ import { DISHES } from '../shared/dishes';
 import React, { Component } from 'react';
 
 class Main extends Component{
-
   constructor(props) {
       super(props);
 
@@ -21,7 +20,6 @@ class Main extends Component{
     this.setState({ selectedDish: dishId});
 }
 
-  
   render(){
       return (
         <div>
