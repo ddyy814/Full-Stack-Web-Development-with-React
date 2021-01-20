@@ -56,7 +56,7 @@ class CommentForm extends Component{
                                 <Label htmlFor="author"  md={12}>Your Name</Label>
                                 <Col  md={12}>
                                     <Control.text model=".author" id="author" name="author" placeholder="Author" className="form-control" validators={{ required, minLength: minLength(3), maxLength: maxLength(15) }} />
-                                    <Errors className="text-danger" model=".author" show="touched" messages={{ required: 'Required', minLength: 'Must be greater than 3 characters', maxLength: 'Must be 15 charaters or less' }} />
+                                    <Errors className="text-danger" model=".author" show="touched" messages={{ required: 'Required: ', minLength: 'Must be greater than 3 characters', maxLength: 'Must be 15 charaters or less' }} />
                                 </Col>
                             </Row>
 
