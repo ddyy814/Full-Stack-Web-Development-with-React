@@ -105,17 +105,17 @@ class CommentForm extends Component{
                 <div className='col-12 col-md-5 m-1'>
                     <h4> Comments </h4>
                     <ul className='list-unstyled'>
-                        <Stagger in>
-                            {comments.map((comment) => {
-                                return (
-                                    <Fade in>
-                                        <li key={comment.id}>
-                                            <p>{comment.comment}</p>
-                                            <p>-- {comment.author} , {new Intl.DateTimeFormat('en-US' ,{ year:'numeric',month:'long',day:'2-digit',}).format(new Date(comment.date))}</p>
-                                        </li>
-                                    </Fade>
-                                );
-                            })}
+                    <Stagger in>
+                        {comments.map((comment) => {
+                            return (
+                                <Fade in>
+                                <li key={comment.id}>
+                                <p>{comment.comment}</p>
+                                <p>-- {comment.author} , {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(comment.date)))}</p>
+                                </li>
+                                </Fade>
+                            );
+                        })}
                         </Stagger>
                     </ul>
                     <CommentForm dishId={dishId} postComment={postComment} />

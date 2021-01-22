@@ -217,6 +217,14 @@
       "comment": "This is a comment.",
       "data": "2021-01-22T05:58:16.122Z",
       "id": 21
+    },
+    {
+      "dishId": 1,
+      "rating": "5",
+      "author": "Dylan Zhang",
+      "comment": "This is a comment",
+      "date": "2021-01-22T21:23:16.272Z",
+      "id": 22
     }
   ],
   "promotions": [
