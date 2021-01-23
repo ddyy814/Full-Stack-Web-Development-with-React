@@ -1,8 +1,8 @@
 # Full-Stack-Web-Development-with-React
 The Hong Kong University of Science and Technology on Coursera
 - Front-End Web UI Frameworks and Tools: Bootstrap 4  &#x1F34E; _Done_
-- Front-End Web Development with React: React &#x1F34F; _In Progress_
-- Multiplatform Mobile App Development with React Native
+- Front-End Web Development with React: React &#x1F34E; _Done_
+- Multiplatform Mobile App Development with React Native: React Native &#x1F34F; _Preparation_
 - Server-side Development with NodeJS, Express and MongoDB
 
 ## First section
